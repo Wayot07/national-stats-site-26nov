@@ -1,6 +1,8 @@
 # DataNusa — Portal Statistik Indonesia
 
-[![make.fun](https://img.shields.io/badge/make.fun-best--national--statistics--site-0f766e)](https://make.fun/bounty/best-national-statistics-site-20261126-0539)
+[![make.fun · best-national-statistics-site-20261126-0539](https://make.fun/badge/best-national-statistics-site-20261126-0539.svg)](https://make.fun/bounty/best-national-statistics-site-20261126-0539?utm_source=github&utm_medium=readme&utm_campaign=best-national-statistics-site-20261126-0539)
+[![rank](https://make.fun/badge/best-national-statistics-site-20261126-0539/Wayot07/national-stats-site-26nov/rank.svg)](https://make.fun/bounty/best-national-statistics-site-20261126-0539/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-national-statistics-site-20261126-0539)
+[![reward](https://make.fun/badge/best-national-statistics-site-20261126-0539/Wayot07/national-stats-site-26nov/reward.svg)](https://make.fun/bounty/best-national-statistics-site-20261126-0539?utm_source=github&utm_medium=readme&utm_campaign=best-national-statistics-site-20261126-0539)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Static site](https://img.shields.io/badge/site-static%20HTML%2FCSS%2FJS-blue)](app/index.html)
 
