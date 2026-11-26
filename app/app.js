@@ -269,7 +269,7 @@ function viewPublications() {
 
 // ---------- Router ----------
 const ROUTES = {
-  '': { view: viewHome, after: () => drawLineChart(document.getElementById('chart-home-gdp'), GDP_GROWTH, { label: (p) => fmtPct(p.value), aria: 'Pertumbuhan PDB 2020 sampai 2024' }) },
+  '': { view: viewHome, after: () => drawLineChart(document.getElementById('chart-home-gdp'), GDP_GROWTH, { height: 210, label: (p) => fmtPct(p.value), aria: 'Pertumbuhan PDB 2020 sampai 2024' }) },
   penduduk: { view: viewPopulation, after: () => {
     drawBarChart(document.getElementById('chart-pop'), POPULATION, { label: (p) => fmtID(p.value), fmt: (v) => String(Math.round(v)), aria: 'Jumlah penduduk 2020 sampai 2024' });
     const sel = document.getElementById('year-pop');
@@ -315,7 +315,7 @@ const ROUTES = {
     const show = () => {
       const y = Number(sel.value);
       const row = WELFARE.find((w) => w.year === y);
-      out.textContent = `Tahun ${y}: rasio gini ${fmtID(row.gini, 3)} · IPM ${fmtID(row.ipm)}`;
+      out.textContent = `Tahun ${y}: rasio gini ${fmtID(row.gini, 3)} · IPM ${fmtID(row.ipm, 2)}`;
     };
     sel.addEventListener('change', show);
     show();

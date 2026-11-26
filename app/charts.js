@@ -85,10 +85,15 @@ export function drawLineChart(canvas, series, opts) {
     ctx.beginPath();
     ctx.arc(x(i), y(p.value), 4, 0, Math.PI * 2);
     ctx.fill();
+    // Label nilai: dijaga agar tidak terpotong tepi kanvas.
+    const text = opts.label(p);
+    const tw = ctx.measureText(text).width;
+    const lx = Math.max(box.left + tw / 2, Math.min(box.left + box.width - tw / 2, x(i)));
+    const above = y(p.value) - 22 > box.top;
     ctx.fillStyle = SLATE;
     ctx.textAlign = 'center';
-    ctx.textBaseline = 'bottom';
-    ctx.fillText(opts.label(p), x(i), y(p.value) - 8);
+    ctx.textBaseline = above ? 'bottom' : 'top';
+    ctx.fillText(text, lx, above ? y(p.value) - 8 : y(p.value) + 8);
     ctx.fillStyle = opts.color || TEAL;
   });
   ctx.fillStyle = SLATE;
